@@ -1,0 +1,39 @@
+<!-- HEADER OU CABEÇALHO ONDE FICA O MENU PRINCIPAL -->
+<header>
+	<!-- INICIO DA NAVBAR OU MENU -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<!-- para trocar a cor do navbar trocar as informações do navbar-ligh e bg-light: default, primary, secondary, success, info, danger, warning, dark -->
+  		<a class="navbar-brand" href="projeto.html">
+  			<!-- as unidades de medidas recomendadas são px(pixel), em(tipográfico) e %(porcentagem) -->
+  			<img src="https://img.icons8.com/dusk/50/000000/combo-chart.png" id="topo" width="40px" />
+  			Sistemas Inteligentes
+		</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+  	<!-- LISTA DE NAVBAR -->
+    <ul class="navbar-nav">
+    <!-- para fazer navbar em vertical utilizar a classe flex-column, utilizar abas usar a classe nav-tabs-->
+      <li class="nav-item active">
+        <a class="nav-link" href="projeto.html">PRINCIPAL <span class="sr-only">(ativa)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="projeto.html#sobre">SOBRE</a>
+      </li>
+      <!-- MENU COM DROPDOWN -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          CONTATO
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Formulário Simples</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">DESATIVADO</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</header>
