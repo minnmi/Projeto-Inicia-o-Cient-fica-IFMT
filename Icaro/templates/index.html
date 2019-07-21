@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script src="{{ url_for('static', filename='plot.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>D3</title>
+</head>
+<body>
+     <!-- onload="makeplot();"> -->
+    <h1>Project</h1>
+    <form id="formName" action="" method="post">
+        First name:<br>
+        <input id="fname" type="text" name="firstname"><br><br>
+        Last name:<br>
+        <input id="lname" type="text" name="lastname"><br><br>
+        <input type="submit" value="Submit" onclick="foobar();">
+    </form>
+    <div class="row">
+    	<div class="column" id="chart1"></div>
+        <div class="column" id="chart2"></div>
+    </div>
+    <div class="row">
+        <div class="column" id="chart3"></div>
+        <div class="column" id="chart4"></div>
+    </div>
+</body>
+</html>
